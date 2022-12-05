@@ -39,4 +39,9 @@ module.exports = {
    * Mais informações em: https://super-app-client.calindra.com.br/docs/ame-super-app-client/
    */
   "ame-super-app-client": "2.9.0",
+  /**
+   * Aqui nesta linha você determina a versão do sdk-support que você irá utilizar.
+   * Mais informações em: https://ame-sdk-support.calindra.com.br/
+   */
+  "ame-mini-app-sdk-support": "1.0.0",
 }
