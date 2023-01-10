@@ -1,6 +1,6 @@
 import Ame from "ame-super-app-client";
 
-export default class Home {
+export default class Serverless {
   state = { helloMessage: '' };
 
   async componentDidMount() {

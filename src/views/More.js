@@ -1,5 +1,5 @@
 import Ame from 'ame-super-app-client';
-export default class About {
+export default class More {
   // Esta função é responsável por abrir uma URL externa
   accessPortal = () => {
     // Verificar se o método Ame.openBrowser existe
