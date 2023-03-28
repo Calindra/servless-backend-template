@@ -14,9 +14,9 @@ export default class Home {
         to: "/More",
       },
       {
-        title: "Servless Backend",
-        subtitle: "Demonstra o uso do servless backend",
-        to: "/Servless",
+        title: "Serverless",
+        subtitle: "Demonstra o uso do serverless",
+        to: "/Serverless",
       },
     ]
   };
