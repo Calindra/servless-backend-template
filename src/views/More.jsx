@@ -1,13 +1,24 @@
 <Window>
-  <Circle icon={require('../assets/images/icon_ame.svg')}/>
-  <Subtitle fontSize="xs" textAlign="center" color="neutralcolor-darkest">Detalhes desta versão</Subtitle>
-  <Spacing size="md"/>
+  <Header
+    context="secondary"
+    title="Boilerplate Mini App"
+    subTitle="About"
+    safeArea={this.state.safeArea}
+    leftIcon="arrow-left"
+    leftIconOnPress={() => Ame.navigation.back()}
+    rightIcon="close"
+    rightIconOnPress={() => Ame.navigation.closeMiniApp()}
+    sticky
+  />
+  <Image source={require('../assets/images/icon_ame.svg')} />
+  <Text>Detalhes desta versão</Text>
   <View>
-    <Paragraph textAlign="center">Todas as informações sobre os componentes, as API's de comunicação e outros detalhes você encontra em nosso portal de desenvolvimento.</Paragraph>
-    <Spacing size="md"/>
+    <Text>Todas as informações sobre os componentes, as API's de comunicação e outros detalhes você encontra em nosso portal de desenvolvimento.</Text>
+   
     <Button
-    label="Abrir"
-    type='primary'
-    onClick={this.accessPortal} />
-	</View>
+      label="Abrir"
+      display
+      onPress={this.accessPortal}
+    />
+  </View>
 </Window>

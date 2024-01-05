@@ -1,9 +1,16 @@
 import Ame from "ame-super-app-client";
 
 export default class Serverless {
-  state = { helloMessage: '' };
-
+  state = { helloMessage: '', safeArea:0 };
+  
   async componentDidMount() {
+    try{
+      const specs = await Ame.getDeviceSpecs()
+      this.setState({safeArea: specs.safeAreas.top})
+
+  } catch(e){
+      console.error("erro ao executar o método getDeviceSpecs", e);
+  }
     try {
       const body = {
         message: 'World'

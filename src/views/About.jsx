@@ -1,14 +1,24 @@
 <Window>
-	<Group>
-		<Circle icon={require('../assets/images/icon_ame.svg')}/>
-    <Spacing size="sm"/>
-		<Subtitle fontSize="xs" textAlign="center" color="neutralcolor-darkest">Detalhes desta versão</Subtitle>
-		<View>
-      <Subtitle textAlign="center" fontSize="xxxs" color="neutralcolor-darkest">Este mini-app foi desenvolvido utilizando as seguintes versões:</Subtitle>
-      <Spacing size="sm"/>
-      <Paragraph textAlign="center">Versão da biblioteca de componentes: 2.5.0</Paragraph>
-      <Spacing size="sm"/>
-			<Paragraph textAlign="center">Versão da API de Super Client: 2.8.0</Paragraph>
-		</View>
-	</Group>
+  <Header
+    context="secondary"
+    title="Boilerplate Mini App"
+    subTitle="About"
+    safeArea={this.state.safeArea}
+    leftIcon="arrow-left"
+    leftIconOnPress={() => Ame.navigation.back()}
+    rightIcon="close"
+    rightIconOnPress={() => Ame.navigation.closeMiniApp()}
+    sticky
+  />
+  <View>
+    <View justify='center'>
+      <Image
+        style={{ width: 200, height: 200 }}
+        source={require('../assets/images/icon_ame.svg')}
+      />
+    </View>
+    <Text textAlign='center'>Este mini-app foi desenvolvido utilizando as versões:</Text>
+    <Text textAlign='center'>ame-miniapp-components: <Text style={{ fontWeight: 'bold' }}>3.0.0-beta.15</Text></Text>
+    <Text textAlign='center'>ame-super-app-client: <Text style={{ fontWeight: 'bold' }}>2.27.0</Text></Text>
+  </View>
 </Window>
