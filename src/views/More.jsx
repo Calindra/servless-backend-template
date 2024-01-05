@@ -10,7 +10,7 @@
     rightIconOnPress={() => Ame.navigation.closeMiniApp()}
     sticky
   />
-  <Image source={require('../assets/images/icon_ame.svg')} />
+  <Image src={require('../assets/images/icon_ame.svg')} />
   <Text>Detalhes desta versão</Text>
   <View>
     <Text>Todas as informações sobre os componentes, as API's de comunicação e outros detalhes você encontra em nosso portal de desenvolvimento.</Text>
