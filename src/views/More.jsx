@@ -2,7 +2,7 @@
   <Header
     context="secondary"
     title="Boilerplate Mini App"
-    subTitle="About"
+    subTitle="More"
     safeArea={this.state.safeArea}
     leftIcon="arrow-left"
     leftIconOnPress={() => Ame.navigation.back()}

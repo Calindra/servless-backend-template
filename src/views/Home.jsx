@@ -10,10 +10,14 @@
     sticky
   />
   <View>
+   
     <Image
       style={{ height: 200 }}
-      source={require('../assets/images/icon_ame.svg')}
+      src={require('../assets/images/icon_ame.svg')}
     />
+<View marginBottom="medium">
+    <Text textAlign="center">[b]MiniApp Ametista 3.0.0[/b]</Text>
+</View>
     <List items={this.state.links} onItemPress={this.navigateTo} />
   </View>
 </Window>
