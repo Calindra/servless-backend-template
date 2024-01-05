@@ -33,7 +33,7 @@ module.exports = {
    * Aqui nesta linha você determina a versão da biblioteca de componentes que você irá utilizar.
    * Mais informações em: https://ame-miniapp-components.calindra.com.br/docs/estrutura/
    */
-  "ame-miniapp-components": "3.0.0",
+  "ame-miniapp-components": "3.0.0-beta.17",
   /**
    * Aqui nesta linha você determina a versão do super-app-client que você irá utilizar.
    * Mais informações em: https://super-app-client.calindra.com.br/docs/ame-super-app-client/
